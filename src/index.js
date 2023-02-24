@@ -2,22 +2,6 @@ let tasks = [
   {
     id: 1,
     list: "Project",
-    title: "title",
-    description: "lorem",
-    priority: "high",
-    dueDate: "??/??/????",
-  },
-  {
-    id: 2,
-    list: "Project",
-    title: "Title Here",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
-    dueDate: "??/??/????",
-    priority: "high",
-  },
-  {
-    id: 3,
-    list: "very-crazy",
     title: "Title Here",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
     dueDate: "??/??/????",
@@ -48,7 +32,7 @@ function displayTasksItems(taskItems) {
                 <p>Priority</p>
                 <h4>${item.priority}</h4>
               </div>
-        <div class="due-date">${item.priority}</div>
+        <div class="due-date">${item.dueDate}</div>
         <div class="delete-container"><button class="delete-btn" id="${item.id}">del</button></div>
       </div>`;
   });
